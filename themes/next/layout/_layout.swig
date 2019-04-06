@@ -21,6 +21,15 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?315eb258b7ce849b7e44acf3ede945d5";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
