@@ -691,7 +691,7 @@ comments:
 # Disqus
 # For more information: https://disqus.com
 disqus:
-  enable: true
+  enable: false
   shortname: azard-blog
   count: true
 
